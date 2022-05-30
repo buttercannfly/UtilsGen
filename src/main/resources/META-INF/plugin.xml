@@ -1,13 +1,22 @@
 <idea-plugin>
     <id>org.robin.UtilsGen</id>
     <name>UtilsGen</name>
-    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+    <vendor email="1710085142@qq.com" url="https://github.com/buttercannfly/UtilsGen">Robin Zhang</vendor>
+    <version>1.1</version>
+    <description>
+        <![CDATA[
+    <p>This is a project that can provide Java developers with some useful Util codes.
+    <ul>
+      <li>Right click the directory and choose "Java Utils"</li>
+      <li>Input the function of your util</li>
+      <li>we will provide you some excellent util codes</li>
+      <li>choose your ideal code, and the code will automatically be imported into your project</li>
+    </ul>
+    </p>
+  ]]>
+</description>
 
-    <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
-    ]]></description>
-
+    <idea-version since-build="182" until-build="221.*"/>
     <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
          on how to target different products -->
     <depends>com.intellij.modules.platform</depends>
@@ -19,7 +28,7 @@
 
     <actions>
         <!-- Add your actions here -->
-        <action id="org.robin.zhang.newUtil" class="NewUtilAction" text="Java Utils" description="Test Description">
+        <action id="org.robin.zhang.newUtil" class="NewUtilAction" text="Java Utils" description="Create a Util Class">
             <add-to-group group-id="NewGroup" anchor="before" relative-to-action="NewFile"/>
         </action>
     </actions>
